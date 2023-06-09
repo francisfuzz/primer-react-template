@@ -17,12 +17,16 @@ import {
 function FileTreeHeader() {
   return (
     <>
-      <Box>
-        <Box>
-          <SidebarCollapseIcon size={16} />
-          <Button leadingIcon={GitBranchIcon} trailingIcon={TriangleDownIcon}>main</Button>
-          <PlusIcon size={16} />
-          <SearchIcon size={16} />
+      <Box sx={{ maxWidth: '320px' }}>
+        <Box sx={{ display: 'flex', px: 4, py: 3, justifyContent: 'space-between' }}>
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+            <SidebarCollapseIcon size={16} />
+            <Button leadingIcon={GitBranchIcon} trailingIcon={TriangleDownIcon}>main</Button>
+          </Box>
+          <Box>
+            <PlusIcon size={16} />
+            <SearchIcon size={16} />
+          </Box>
         </Box>
         <FormControl>
           <FormControl.Label visuallyHidden={true}>Jump to file</FormControl.Label>
