@@ -18,7 +18,7 @@ function FileTreeHeader() {
   return (
     <>
       <Box sx={{ maxWidth: '320px' }}>
-        <Box sx={{ display: 'flex', px: 4, py: 3, justifyContent: 'space-between' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'row', px: 4, py: 3 }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <SidebarCollapseIcon size={16} />
             <Button leadingIcon={GitBranchIcon} trailingIcon={TriangleDownIcon}>main</Button>
