@@ -17,19 +17,21 @@ import {
 function FileTreeHeader() {
   return (
     <>
-      <Box sx={{display: 'flex'}}>
-        <SidebarCollapseIcon size={16} />
-        <Button leadingIcon={GitBranchIcon} trailingIcon={TriangleDownIcon}>main</Button>
-        <PlusIcon size={16} />
-        <SearchIcon size={16} />
+      <Box>
+        <Box>
+          <SidebarCollapseIcon size={16} />
+          <Button leadingIcon={GitBranchIcon} trailingIcon={TriangleDownIcon}>main</Button>
+          <PlusIcon size={16} />
+          <SearchIcon size={16} />
+        </Box>
+        <FormControl>
+          <FormControl.Label visuallyHidden={true}>Jump to file</FormControl.Label>
+          <TextInput
+            leadingVisual={FilterIcon}
+            aria-label="Jump to file"
+            placeholder="Jump to file" />
+        </FormControl>
       </Box>
-      <FormControl>
-        <FormControl.Label visuallyHidden={true}>Jump to file</FormControl.Label>
-        <TextInput
-          leadingVisual={FilterIcon}
-          aria-label="Jump to file"
-          placeholder="Jump to file" />
-      </FormControl>
     </>
   )
 }
