@@ -1,9 +1,12 @@
 import {
   Box,
   Button,
+  FormControl,
+  TextInput,
 } from '@primer/react'
 
 import {
+  FilterIcon,
   SidebarCollapseIcon,
   GitBranchIcon,
   PlusIcon,
@@ -20,6 +23,13 @@ function FileTreeHeader() {
         <PlusIcon size={16} />
         <SearchIcon size={16} />
       </Box>
+      <FormControl>
+        <FormControl.Label visuallyHidden={true}>Jump to file</FormControl.Label>
+        <TextInput
+          leadingVisual={FilterIcon}
+          aria-label="Jump to file"
+          placeholder="Jump to file" />
+      </FormControl>
     </>
   )
 }

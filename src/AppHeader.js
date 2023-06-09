@@ -1,5 +1,4 @@
 import {
-  Box,
   UnderlineNav2 as UnderlineNav
 } from '@primer/react'
 
