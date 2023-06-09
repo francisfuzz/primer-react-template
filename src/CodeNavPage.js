@@ -12,9 +12,10 @@ import {
   ShieldIcon,
 } from '@primer/octicons-react'
 
+
 function CodeNavPage() {
   return (
-    <UnderlineNav aria-label="Repository">
+    <UnderlineNav aria-label="Repository" sx={{ backgroundColor: '#F6F8FA' }}>
       <UnderlineNav.Item aria-current="page" icon={CodeIcon}>
         Code
       </UnderlineNav.Item>
