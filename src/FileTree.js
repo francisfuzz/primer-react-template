@@ -1,7 +1,14 @@
-import { Box } from '@primer/react'
+import {
+  Box,
+  Button,
+} from '@primer/react'
 
 import {
-  SidebarCollapseIcon
+  SidebarCollapseIcon,
+  GitBranchIcon,
+  PlusIcon,
+  SearchIcon,
+  TriangleDownIcon,
 } from '@primer/octicons-react'
 
 function FileTree() {
@@ -9,6 +16,9 @@ function FileTree() {
     (
       <Box>
         <SidebarCollapseIcon size={16} />
+        <Button leadingIcon={GitBranchIcon} trailingIcon={TriangleDownIcon}>main</Button>
+        <PlusIcon size={16} />
+        <SearchIcon size={16} />
       </Box>
     )
   )
